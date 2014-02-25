@@ -1,5 +1,5 @@
 
-         Text::Delimited - Delimited Text Processing Module - 2.06
+         Text::Delimited - Delimited Text Processing Module - 2.07
 
 ================================================================================
 SYNOPSIS:
@@ -138,9 +138,9 @@ EXPORTABLE METHODS:
 AUTHORSHIP:
 ================================================================================
 
-    Text::Delimited 2.06 2012/03/05
+    Text::Delimited 2.07 2014/02/24
 
-    (c) 2004-2012, Phillip Pollard <bennie@cpan.org>
+    (c) 2004-2014, Phillip Pollard <bennie@cpan.org>
     Released under the Perl Artistic License
 
     I'd like to thank PetBlvd for sponsoring continued work on this module.

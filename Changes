@@ -1,6 +1,10 @@
 Revision history for Perl extension Text::Delimited.
 
-2.06  2012/03/05
+2.07  2014/02/24
+
+	Meta information updated
+	
+	Added LICENSE file to distribution
 
 	Tests updated to Test::Simple.
 
