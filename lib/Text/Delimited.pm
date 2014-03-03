@@ -39,6 +39,8 @@ Other informational methods are also available. They are listed blow:
 
 =head1 METHODS:
 
+=over
+
 =item close()
 
 Closes the file or connection, and cleans up various bits.
@@ -102,10 +104,14 @@ This method returns undef if there is no more data to be read.
 Set the given encoding scheme on the input file to allow for reading files
 encoded in standards other than ASCII.
 
+=back
+
 =head1 EXPORTABLE METHODS
 
 For convienience, the following methods are exportable. These are handy 
 for quickly writing output delimited files.
+
+=over
 
 =item d_join(@STUFF)
 
@@ -117,6 +123,8 @@ current delimiter.
 Delimited Line. Returns the given array as a string joined with the
 current delimiter and with newline appended.
 
+=back
+
 =head1 BUGS AND SOURCE
 
 	Bug tracking for this module: https://rt.cpan.org/Dist/Display.html?Name=Text-Delimited
@@ -125,7 +133,7 @@ current delimiter and with newline appended.
 
 =head1 VERSION
 
-    Text::Delimited v2.07 (2014/02/24)
+    Text::Delimited v2.08 (2014/03/03)
 
 =head1 COPYRIGHT
 
@@ -151,7 +159,7 @@ use Symbol;
 use 5.006;
 use strict;
 
-$Text::Delimited::VERSION = '2.07';
+$Text::Delimited::VERSION = '2.08';
 
 ### Private mthods
 

@@ -1,34 +1,30 @@
---- #YAML:1.0
-name:               Text-Delimited
-version:            2.07
-abstract:           Parse Delimited Text Files
+---
+abstract: 'Delimited Text Processing'
 author:
-    - Phil Pollard <bennie@cpan.org>
-license:            artistic_2
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Phil Pollard <bennie@cpan.org>'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    perl:               5.008001
-    Test::Simple:       0
-resources:
-    bugtracker:
-        web:  https://rt.cpan.org/Dist/Display.html?Name=Text-Delimited
-    repository:
-        type:  git
-        url:   git://github.com/bennie/perl-Text-Delimited.git
-        web:   http://github.com/bennie/perl-Text-Delimited
-no_index:
-    directory:
-        - t
-        - inc
-provides:
-    Rcs::Parser:
-        file: lib/Text/Delimited.pm
-        version: 2.07
-generated_by:       ExtUtils::MakeMaker version 6.56
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.9, CPAN::Meta::Converter version 2.133380'
+license: artistic_2
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Text-Delimited
+no_index:
+  directory:
+    - t
+    - inc
+    - t
+provides:
+  Text::Delimited:
+    file: lib/Text/Delimited.pm
+    version: 2.08
+requires:
+  Test::Simple: 0
+resources:
+  bugtracker: https://rt.cpan.org/Dist/Display.html?Name=Text-Delimited
+  repository: git://github.com/bennie/perl-Text-Delimited.git
+version: 2.08

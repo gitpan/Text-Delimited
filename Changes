@@ -1,5 +1,13 @@
 Revision history for Perl extension Text::Delimited.
 
+2.08  2014/03/03
+
+	Automated build, now properly constructing meta data.
+
+	Corrected POD errors
+
+	Adding a POD test
+
 2.07  2014/02/24
 
 	Meta information updated
