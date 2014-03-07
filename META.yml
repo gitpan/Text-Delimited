@@ -21,10 +21,13 @@ no_index:
 provides:
   Text::Delimited:
     file: lib/Text/Delimited.pm
-    version: 2.08
+    version: 2.09
 requires:
+  Symbol: 0
+  Test::More: 0
   Test::Simple: 0
+  perl: 5.006001
 resources:
   bugtracker: https://rt.cpan.org/Dist/Display.html?Name=Text-Delimited
   repository: git://github.com/bennie/perl-Text-Delimited.git
-version: 2.08
+version: 2.09

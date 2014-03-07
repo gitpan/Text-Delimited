@@ -5,10 +5,12 @@ WriteMakefile(
   AUTHOR   => 'Phil Pollard <bennie@cpan.org>',
   LICENSE  => 'artistic_2',
   NAME     => 'Text::Delimited',
-  VERSION  => '2.08',
+  VERSION  => '2.09',
 
   PREREQ_PM => {
-          'Test::Simple' => '0'
+          'Test::More' => 0,
+          'Test::Simple' => '0',
+          'Symbol' => 0
         },
 
   ( $ExtUtils::MakeMaker::VERSION < 6.46
@@ -16,13 +18,16 @@ WriteMakefile(
         : ( META_MERGE => {
                 'meta-spec' => { version => 2 },
                 no_index => {directory => [qw/t/]},
-                provides => {
-                     'Text::Delimited' => {
-                          file    => 'lib/Text/Delimited.pm',
-                          version => '2.08'
-                     }
-                },
-                requires  => {perl => '5.006'},
+                provides => 
+
+	{
+          'Text::Delimited' => {
+                                 'version' => '2.09',
+                                 'file' => 'lib/Text/Delimited.pm'
+                               }
+        },
+
+                release_status => 'stable',
                 resources => {
                     repository => {
                         type => 'git',
@@ -36,6 +41,11 @@ WriteMakefile(
                 },
             },
         )
-    )
+    ),
+
+  ( $ExtUtils::MakeMaker::VERSION < 6.48
+        ? ()
+        : ( MIN_PERL_VERSION => '5.006001' )
+  )
 
 );

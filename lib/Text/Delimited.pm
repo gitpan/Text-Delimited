@@ -133,11 +133,17 @@ current delimiter and with newline appended.
 
 =head1 VERSION
 
-    Text::Delimited v2.08 (2014/03/03)
+    Text::Delimited v2.09 (2014/03/07)
 
 =head1 COPYRIGHT
 
     (c) 2004-2014, Phillip Pollard <bennie@cpan.org>
+
+=head1 LICENSE
+
+This source code is released under the "Perl Artistic License 2.0," the text of
+which is included in the LICENSE file of this distribution. It may also be
+reviewed here: http://opensource.org/licenses/artistic-license-2.0
 
 =head1 AUTHORSHIP
 
@@ -156,10 +162,11 @@ package Text::Delimited;
 
 use Symbol;
 
-use 5.006;
+use 5.006001;
+use warnings;
 use strict;
 
-$Text::Delimited::VERSION = '2.08';
+$Text::Delimited::VERSION = '2.09';
 
 ### Private mthods
 
