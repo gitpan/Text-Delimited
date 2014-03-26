@@ -1,5 +1,9 @@
 Revision history for Perl extension Text::Delimited.
 
+2.10  2014/03/26
+
+	Including credit for the RT on the 2.00 change info
+
 2.09  2014/03/07
 
 	Now using warnings.
@@ -33,6 +37,8 @@ Revision history for Perl extension Text::Delimited.
 
 	Added initialization checks on exported methods to avoid superfluous
 	 warnings generated when -w is used.
+
+	Handle blank lines at the end of a file gracefully as per RT #12006
 
 	Added credit to PetBlvd (http://www.petblvd.com) for the sponsorship
 	 of further development.
