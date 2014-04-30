@@ -133,7 +133,7 @@ current delimiter and with newline appended.
 
 =head1 VERSION
 
-    Text::Delimited v2.10 (2014/03/26)
+    Text::Delimited v2.11 (2014/04/30)
 
 =head1 COPYRIGHT
 
@@ -166,7 +166,7 @@ use 5.006001;
 use warnings;
 use strict;
 
-$Text::Delimited::VERSION = '2.10';
+$Text::Delimited::VERSION = '2.11';
 
 ### Private mthods
 
